@@ -18,7 +18,7 @@ def get_db():
         return db
 
 
-# endpoint: получаес в качестве запроса id пользователя, запрашиваем ответ, возвращаем предсказания и № группы для A/B тестирования
+# endpoint: получаем в качестве запроса id пользователя, запрашиваем ответ, возвращаем предсказания и № группы для A/B тестирования
 
 @app.get("/post/recommendations/", response_model=Response)
 def get_recommendations(id: int, time: datetime, limit: int = 5, db: Session = Depends(get_db)) -> Response:

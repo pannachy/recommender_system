@@ -16,6 +16,3 @@ class PostGet(BaseModel):
 class Response(BaseModel):
     exp_group: str
     recommendations: List[PostGet]
-
-    class Config:
-        orm_mode = True

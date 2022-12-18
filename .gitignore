@@ -1,2 +1,4 @@
 data/
+!likes_ABtest.csv
+!views_ABtest.csv
 catboost_info/
