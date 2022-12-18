@@ -7,15 +7,15 @@
 
 ### Использованные инструменты
 ```
-_Модель предсказания_: catboost
+Модель предсказания: catboost
 
-_EDA_: python, pandas, numpy, scikit-learn
+EDA: python, pandas, numpy, mathplotlib, seaborn, scikit-learn
 
-_Feature engeneering_: pytorch, transformers, Distilbert
+Feature engeneering: pytorch, transformers, Distilbert
 
-_Бэкэнд-сервис_: FastApi, SQLAlchemy, 
+Бэкэнд-сервис: FastApi, SQLAlchemy, 
 
-_A/B-тесты_: python, scipy
+A/B-тесты: python, scipy
 ```
 
 ### Входные данные 
