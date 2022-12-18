@@ -1,0 +1,17 @@
+catboost==1.0.6
+category-encoders==2.5.0
+datasets==2.7.1
+fastapi==0.75.1
+loguru==0.6.0
+nltk==3.8
+numpy==1.22.4
+pandas==1.4.2
+psycopg2-binary==2.9.3
+pydantic==1.9.1
+requests==2.27.1
+scikit_learn==1.1.1
+sqlalchemy==1.4.35
+torch==1.13.1+cu116
+transformers==4.25.1
+tqdm==4.46.1
+uvicorn==0.16.0
