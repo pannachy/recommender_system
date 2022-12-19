@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Integer
-from .database import Base
+from database import Base
 
 '''
 модели SQLAlchemy

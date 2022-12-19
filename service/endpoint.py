@@ -1,9 +1,9 @@
 from datetime import datetime
-from .database import SessionLocal
+from database import SessionLocal
 from fastapi import Depends, FastAPI
-from .model import Post
-from .prediction_and_features import get_recommended_posts
-from .schemas import Response
+from model import Post
+from prediction_and_features import get_recommended_posts
+from schemas import Response
 from sqlalchemy.orm import Session
 
 '''
