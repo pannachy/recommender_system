@@ -13,10 +13,10 @@ from sqlalchemy import create_engine
 # функция загрузки модели из рабочей директории
 
 def load_models():
-    model_path_test = r"C:/Users/Kisya/ML_Karpov/Final_project/models/model_test.pkl"
+    model_path_test = r"/models/model_test.pkl"
     model_test = pickle.load(open(model_path_test, 'rb'))
 
-    model_path_control = r"C:/Users/Kisya/ML_Karpov/Final_project/models/model_control.pkl"
+    model_path_control = r"/models/model_control.pkl"
     model_control = pickle.load(open(model_path_control, 'rb'))
 
     return model_test, model_control
@@ -25,8 +25,7 @@ def load_models():
 def batch_load_sql(query: str) -> pd.DataFrame:
     CHUNKSIZE = 500_000
     engine = create_engine(
-        "postgresql://robot-startml-ro:pheiph0hahj1Vaif@"
-        "postgres.lab.karpov.courses:6432/startml"
+        "postgresql://user:password@host:dbname"
     )
     conn = engine.connect().execution_options(stream_results=True)
     chunks = []

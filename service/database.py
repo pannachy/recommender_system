@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 '''
 
 
-SQLALCHEMY_DATABASE_URL = "postgresql://robot-startml-ro:pheiph0hahj1Vaif@postgres.lab.karpov.courses:6432/startml"
+SQLALCHEMY_DATABASE_URL = "postgresql://user:password@host:dbname"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True)    #, pool_size=10, max_overflow=0, pool_timeout=60
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
