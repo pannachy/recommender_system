@@ -2,5 +2,6 @@ data/
 !likes_ABtest.csv
 !views_ABtest.csv
 catboost_info/
-
+!recommend_system_ABtest.ipynb
+!catboost_model_control.pkl
 __init__.py
